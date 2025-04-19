@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+html{
+    font-size: 16px;
+}
+.container{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 10rem;
+    @media screen and (min-width:320px) and (max-width:768px){
+        width: 100%;
+        padding: 0;;
+        
+    }
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    h1{
+        font-size: 2rem;
+    }
+}
+.info{
+    gap: 4rem;
+    display: flex;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        color:black;
+        width: 100px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        font-family: "Sen", sans-serif;
+        &:hover{
+            color: white;
+            background-color: #4232C2;
+            border-radius:10px ;
+            transition: .3s;
+        }
+
+    }
+    @media screen and (min-width:320px) and (max-width:768px){
+        a{
+            display: none;
+        }
+}
+}
+.icon{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    @media screen and (min-width:320px) and (max-width:768px){
+        display: none;
+    }
+}
+.bar{
+    display: none;
+    @media screen and (min-width:320px) and (max-width:768px){
+        display: block;
+        color: #4232C2;
+        font-size: 1rem;
+    }
+}
