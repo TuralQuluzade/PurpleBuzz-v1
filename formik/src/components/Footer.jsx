@@ -41,7 +41,7 @@ const Footer = () => {
                 <h2>Our Company</h2>
             <div className={styles.links}>
                 <Link to="/">Home</Link>
-                <a href="">About Us</a> 
+                <Link to="/about">About Us</Link>
                 <a href="">Work</a>
                 <a href="">Price</a>
                 <Link to="/contact">Contact</Link>

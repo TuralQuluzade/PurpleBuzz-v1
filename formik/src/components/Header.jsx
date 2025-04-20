@@ -16,11 +16,11 @@ const Header = () => {
     <div className={styles.container}>
         <div className={styles.logo}>
         <BsBuildings />
-        <h1>Purple Buzz</h1>
+        <Link to="/">Purple Buzz</Link>
         </div>
         <div className={styles.info}>
             <Link to="/">Home</Link>
-            <a href="">About</a>
+            <Link to="/about">About</Link>
             <a href="">Work</a>
             <a href="">Pricing</a>
             <Link to="/contact">Contact</Link>

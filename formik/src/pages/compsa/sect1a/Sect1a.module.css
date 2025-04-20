@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #F6F9FE;
+    @media screen and (min-width:320px) and (max-width:768px){
+        padding: 2rem 0;
+    }
+}
+.main{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    img{
+        width: 45rem;
+    }
+    @media screen and (min-width:320px) and (max-width:768px){
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        img{
+            width: 20rem;
+        }
+    }
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    font-family: "Sen", sans-serif;
+    h1{
+        margin: 3rem 0;
+        font-size: 2.5rem;
+        border-bottom: 5px solid #6266EA;
+        height:4.5rem;
+        width: 12rem;
+        color: #4232C2;
+    }
+    p{
+        width: 70%;
+        font-weight: 300;
+    }
+    @media screen and (min-width:320px) and (max-width:768px){
+       text-align: center;
+       align-items: center;
+       p{
+        width: 80%;
+       }
+    }
+}

@@ -21,6 +21,7 @@ import { FaMoneyBill } from "react-icons/fa";
      },
      onSubmit: values=> {
         axios.post("https://northwind.vercel.app/api/categories",values);
+        formik.resetForm()
     },
    });
    return (
@@ -118,7 +119,7 @@ import { FaMoneyBill } from "react-icons/fa";
        />
        </div>
        </div>
-       <button type="submit" onClick={()=> formik.resetForm()}>Submit</button>
+       <button type="submit">Submit</button>
      </form>
     </div>
         </div>

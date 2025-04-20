@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+.container{
+    width:100%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, white 50%, #EFEFFD 50%);
+    img{
+        width: 33rem;
+    }
+}
+.main{
+    
+    width: 55%;
+    display: flex;
+    align-items: end;
+    h1{
+        padding: 1rem 0;
+        font-family: "Sen", sans-serif;
+        font-size: 2.5rem;
+    }
+    p{
+        padding: 1rem 0;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+    }
+    @media screen and (min-width:320px) and (max-width:425px){
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 20rem;
+        }
+    }
+    @media screen and (min-width:425px) and (max-width:768px){
+        flex-direction: column;
+    }
+}
+.why{
+    width: 100%;
+    
+}
